@@ -1,0 +1,7 @@
+[paths]
+db = "./db/timelark.db"
+files = "./text"
+
+[aleph]
+host = # add host URL here
+collections = # add collection IDs here
