@@ -22,7 +22,7 @@ This very basic data pipeline built in Python is part of the Timelark project. I
 Clone this repository:
 
 ```bash
-git clone <https://github.com/jlstro/timelark-pipeline.git>
+git clone https://github.com/jlstro/timelark-pipeline.git
 cd timelark-pipeline
 ```
 
