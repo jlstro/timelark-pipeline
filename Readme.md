@@ -59,7 +59,7 @@ collections = 25, 55, 90
 
 Make sure you set your Aleph API key as an environment variable named ALEPH_API_KEY.
 
-Running the Pipeline
+## Running the Pipeline
 
 Run the main script to start the pipeline:
 
