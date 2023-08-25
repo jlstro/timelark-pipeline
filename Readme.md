@@ -56,6 +56,7 @@ files = "./text_files"
 host = "https://aleph.occrp.org"
 collections = 25, 55, 90
 ```
+The pipeline script expects txt files in the folder set under files in the cfg. It will read in each file and extract the entities, enrich them and then store them.
 
 Make sure you set your Aleph API key as an environment variable named ALEPH_API_KEY.
 
@@ -68,3 +69,12 @@ python3 main.py
 ```
 
 The pipeline will read text files from the specified directory, extract entities, enrich them using the API, and save the enriched data to the SQLite database.
+
+## To-DO
+
+- Add support for events
+- Add relationship extraction, for example using [spacy-llm](https://github.com/explosion/spacy-llm)
+- De-duplicate entities and fuzzy match
+- Convert enriched entities into [ftm](https://github.com/alephdata/followthemoney)
+- Improve extractor to work with other type of structured information, for example a person's death, from news articles
+- Add blacklist/whitelist support to define a clearer scope of which entities may be interesting for a given investigation
